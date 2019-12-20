@@ -1,0 +1,109 @@
+html {
+  --bg: none;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  font-family: Helvetica, sans-serif;
+  background-color: var(--bg);
+  -webkit-transition: all ease 1s;
+  transition: all ease 1s;
+}
+
+#quote {
+  background-color: white;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 20px 60px;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+#quote #text {
+  font-size: 1.8em;
+  font-weight: 600;
+  color: var(--bg);
+  margin-bottom: 10px;
+}
+
+#quote #second-container {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  margin-top: 18px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+}
+
+#quote #second-container #author {
+  color: var(--bg);
+  margin-right: 0;
+  display: inline;
+}
+
+#quote #second-container #author::before {
+  content: '-';
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+#quote #second-container #new {
+  color: white;
+  background-color: var(--bg);
+  padding: 6px;
+  font-family: .5em;
+  border-radius: 10px;
+  width: 100px;
+  text-align: center;
+  float: right;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+#quote #second-container #new:hover {
+  cursor: pointer;
+}
+
+#share {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1px 20px;
+  background-color: #0f0a0a;
+  border-radius: 12px;
+  color: white;
+  font-size: 1em;
+}
+
+#share img.logo {
+  width: 32px;
+  height: 32px;
+  margin-left: 8px;
+}
+
+#share img.logo:hover {
+  cursor: pointer;
+}
+/*# sourceMappingURL=app.css.map */
